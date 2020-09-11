@@ -21,11 +21,18 @@ class App extends Component {
 		this.setState(novoState);
 	}
 
+	deletarNota(evento) {
+		evento.target.closest('.lista-notas_item').remove();
+	}
+
 	render() {
 		return (
 			<section className='conteudo'>
 				<FormularioCadastro criarNota={this.criarNota.bind(this)} />
-				<ListaDeNotas notas={this.state.notas} />
+				<ListaDeNotas
+					notas={this.state.notas}
+					deletarNota={this.deletarNota.bind(this)}
+				/>
 			</section>
 		);
 	}

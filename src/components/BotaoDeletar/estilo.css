@@ -1,0 +1,11 @@
+.botao-deletar {
+	border: none;
+	padding: 0%;
+	order: 1;
+	align-self: flex-start;
+}
+
+.botao-deletar_icone {
+	height: 15px;
+	width: 15px;
+}

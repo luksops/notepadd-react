@@ -1,3 +1,9 @@
+.card-nota_botao-cabecalho {
+	display: flex;
+	justify-content: space-between;
+	width: -webkit-fill-available;
+}
+
 .card-nota {
 	display: flex;
 	flex-direction: column;
@@ -14,11 +20,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	order: 0;
 }
 
 .card-nota_texto {
 	margin-top: 8px;
 	font-size: 1em;
+	word-break: break-all;
 }
 
 .card-nota_titulo {
