@@ -9,6 +9,7 @@ class ListaDeNotas extends Component {
 					return (
 						<li className='lista-notas_item' key={index}>
 							<CardNota
+								indice={index}
 								textoNota={objeto.texto}
 								tituloNota={objeto.titulo}
 								deletarNota={this.props.deletarNota}
@@ -20,5 +21,4 @@ class ListaDeNotas extends Component {
 		);
 	}
 }
-
 export default ListaDeNotas;

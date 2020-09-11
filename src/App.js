@@ -21,8 +21,10 @@ class App extends Component {
 		this.setState(novoState);
 	}
 
-	deletarNota(evento) {
-		evento.target.closest('.lista-notas_item').remove();
+	deletarNota(indice) {
+		let stateAtual = this.state.notas;
+		stateAtual.splice(indice, 1);
+		this.setState({ notas: stateAtual });
 	}
 
 	render() {
