@@ -13,9 +13,8 @@
 	font-size: 1.1em;
 	display: flex;
 	justify-content: space-between;
-	width: -webkit-fill-available;
 	align-items: center;
-	order: 0;
+	width: -webkit-fill-available;
 }
 
 .card-nota_texto {
@@ -27,4 +26,5 @@
 .card-nota_titulo {
 	font-size: 1.2em;
 	margin-right: 12px;
+	word-break: break-all;
 }

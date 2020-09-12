@@ -29,3 +29,7 @@
 .form-cadastro_submit:active {
 	background-color: var(--secundaria-ativa);
 }
+
+select:invalid {
+	color: gray;
+}

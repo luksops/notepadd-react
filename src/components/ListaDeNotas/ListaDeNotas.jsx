@@ -12,6 +12,7 @@ class ListaDeNotas extends Component {
 								indice={index}
 								textoNota={objeto.texto}
 								tituloNota={objeto.titulo}
+								categoria={objeto.categoria}
 								deletarNota={this.props.deletarNota}
 							/>
 						</li>

@@ -11,7 +11,9 @@ class CardNota extends Component {
 		return (
 			<section className='card-nota'>
 				<header className='card-nota_cabecalho'>
-					<h3 className='card-nota_titulo'>{this.props.tituloNota}</h3>
+					<h3 className='card-nota_titulo'>
+						{this.props.tituloNota} | {this.props.categoria}
+					</h3>
 					<BotaoDeletar
 						deletarNota={this.deletar.bind(this)}
 						className='card-nota_botao-deletar'

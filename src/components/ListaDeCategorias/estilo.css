@@ -1,0 +1,20 @@
+.lista-categorias {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.lista-categorias_lista {
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 5;
+}
+
+.lista-categorias_lista li {
+	color: white;
+	padding: 3px;
+	background-color: dimgray;
+	border: black;
+	border-radius: 7px;
+	text-align: center;
+}
