@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import './estilo.css';
 class FormularioCadastro extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.titulo = '';
 		this.texto = '';
 		this.categoria = '';
+		this.state = { categorias: [] };
+		this._referenceForUpdateView = this._updateView.bind(this);
+	}
+
+	componentDidMount() {
+		this.props.categorias.subscribe(this._referenceForUpdateView);
+	}
+
+	componentWillUnmount() {
+		this.props.categorias.subscribe(this._referenceForUpdateView);
+	}
+
+	_updateView(categorias) {
+		let newState = { ...this.state, categorias };
+		this.setState(newState);
 	}
 
 	handlerMudançaDeTitulo(evento) {
@@ -42,7 +57,7 @@ class FormularioCadastro extends Component {
 					<option value='' disabled hidden>
 						Selecione uma categoria...
 					</option>
-					{this.props.categorias.map((categoria, index) => {
+					{this.props.categorias.categorias.map((categoria, index) => {
 						return <option key={index}>{categoria}</option>;
 					})}
 				</select>
