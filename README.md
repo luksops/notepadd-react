@@ -4,5 +4,5 @@ Personal notepad in React.js
 
 ## Running the App
 
--npm install
--npm start
+<p>-npm install</p> 
+<p>-npm start</p>
