@@ -15,7 +15,7 @@ class FormularioCadastro extends Component {
 	}
 
 	componentWillUnmount() {
-		this.props.categorias.subscribe(this._referenceForUpdateView);
+		this.props.categorias.unSubscribe(this._referenceForUpdateView);
 	}
 
 	_updateView(categorias) {
